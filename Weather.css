@@ -1,0 +1,74 @@
+html,body {
+    overflow-x: hidden; 
+}
+body {  
+    background-size: 100% 100% !important;
+    animation: background-change 20s infinite alternate;
+}
+@keyframes background-change {
+    0% {background-image: url(https://wallpaperset.com/w/full/a/4/6/49091.jpg);}
+    25% {background-image: url(https://www.teahub.io/photos/full/193-1939642_city-wallpapers-4k.jpg);}
+    50% {background-image: url(https://www.pixelstalk.net/wp-content/uploads/images6/Free-download-City-Aesthetic-Wallpaper-HD.jpg);}
+    75% {background-image: url(https://wallpaperaccess.com/full/123346.jpg);}
+    100% {background-image: url(https://wallpaperset.com/w/full/a/4/6/49091.jpg);}
+}
+input {
+    background-color: transparent;
+    border: transparent;
+    font-size: 1.9rem;
+    caret-color: orangered;
+    color: white;
+}
+input:focus {
+    outline: transparent;
+}
+input::placeholder,h4,h5 {
+    color: white;
+}
+i {
+    color: white;
+    font-size: 1.9rem;
+    cursor: pointer;
+}
+#search-box {
+    margin-bottom: 1.4vh;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+#container-box {
+    background-color: transparent;
+}
+#content-box {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+h4,h5 {
+    margin: 0 !important;
+}
+h1 {
+    position: absolute;
+    top: 1.4vh;
+    left: 0.7vw;
+    margin: 0;
+    font-family: 'Russo One', sans-serif;
+    color: white;
+}
+#api {
+    font-family: 'Sedgwick Ave Display', cursive;
+    position: absolute;
+    top: 4.2vh;
+    left: 11.7vw;
+}
+#temp-box {
+    transform: translateX(9.0px);
+}
+@media all and (max-width: 600px) {
+    #api {
+        top: 4.2vh;
+        left: 23.5vw;
+    }
+    #container-box {
+        width: 100% !important;
+    }
+    /* .wind-box {
+        display: none !important;
+    } */
+}
