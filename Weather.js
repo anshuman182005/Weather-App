@@ -24,7 +24,7 @@ function getWeather() {
     fetch('http://api.weatherapi.com/v1/current.json?key=8956c7019a614fec8b9175258231302&q='+city+'&aqi=yes')
         .then(response => response.json())
         .then(data => {
-            $("#temp").html(data.current.temp_f + "&#176;C");
+            $("#temp").html(data.current.temp_c + "&#176;C");
             $("#humidity").html(data.current.humidity + " %");
             $("#wind-speed").html(data.current.wind_kph + " km/h");
             $("#cloud-pct").html(data.current.precip_mm + " mm");
