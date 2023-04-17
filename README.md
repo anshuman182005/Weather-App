@@ -1,4 +1,4 @@
-# Weather App (HTML/CSS/JQUERY/BOOTSTRAP/JAVASCRIPT)
+# Weather App Project
 This is a weather web app which is created using html,css,jquery,bootstrap and javascript.
 
 [Live Demo](https://ninja23482828484848.github.io/Weather-App-Web-Development/ "Weather App")
