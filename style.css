@@ -60,12 +60,3 @@ h1 {
 #temp-box {
     transform: translateX(9.0px);
 }
-@media all and (max-width: 600px) {
-    #api {
-        top: 4.2vh;
-        left: 23.5vw;
-    }
-    #container-box {
-        width: 100% !important;
-    }
-}
