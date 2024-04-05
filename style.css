@@ -6,16 +6,16 @@ body {
     animation: background-change 20s infinite alternate;
 }
 @keyframes background-change {
-    0% {background-image: url(https://wallpaperset.com/w/full/a/4/6/49091.jpg);}
-    25% {background-image: url(https://www.teahub.io/photos/full/193-1939642_city-wallpapers-4k.jpg);}
-    50% {background-image: url(https://www.pixelstalk.net/wp-content/uploads/images6/Free-download-City-Aesthetic-Wallpaper-HD.jpg);}
-    75% {background-image: url(https://wallpaperaccess.com/full/123346.jpg);}
-    100% {background-image: url(https://wallpaperset.com/w/full/a/4/6/49091.jpg);}
+    0% {background-image: url(https://i.postimg.cc/d1rSXhY0/city1.jpg);}
+    25% {background-image: url(https://i.postimg.cc/2StcSQj6/city2.jpg);}
+    50% {background-image: url(https://i.postimg.cc/T2ctDM2B/city3.jpg);}
+    75% {background-image: url(https://i.postimg.cc/J44P36G0/city4.jpg);}
+    100% {background-image: url(https://i.postimg.cc/d1rSXhY0/city1.jpg);}
 }
 input {
     background-color: transparent;
     border: transparent;
-    font-size: 1.9rem;
+    font-size: 1.9rem !important;
     caret-color: orangered;
     color: white;
 }
@@ -23,12 +23,22 @@ input:focus {
     outline: transparent;
 }
 input::placeholder,h4,h5 {
-    color: white;
+    color: white !important;
 }
-i {
-    color: white;
-    font-size: 1.9rem;
+.arrows {
     cursor: pointer;
+}
+.search-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;  
+}
+.search-button img {
+    width: 32px;
+    height: 32px;
 }
 #search-box {
     margin-bottom: 1.4vh;
@@ -43,20 +53,31 @@ i {
 h4,h5 {
     margin: 0 !important;
 }
-h1 {
+#top-heading {
+    display: flex;
     position: absolute;
     top: 1.4vh;
     left: 0.7vw;
     margin: 0;
-    font-family: 'Russo One', sans-serif;
     color: white;
 }
-#api {
+#top-heading #heading-api {
+    font-family: 'Russo One', sans-serif;
+}
+#top-heading #api {
     font-family: 'Sedgwick Ave Display', cursive;
-    position: absolute;
-    top: 4.2vh;
-    left: 11.7vw;
+    margin-top: 1.9vh;
 }
 #temp-box {
     transform: translateX(9.0px);
+}
+@media all and (max-width: 600px) {
+    #container-box {
+        width: 100% !important;
+    }
+}
+@media all and (max-width: 900px) and (min-width: 601px) {
+    #container-box {
+        width: 75% !important;
+    }
 }

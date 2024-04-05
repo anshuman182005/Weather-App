@@ -14,12 +14,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="w-100 h-100 d-flex justify-content-evenly align-items-center flex-column">
-    <h1>Weather</h1>
-    <h1 id="api">Api</h1>
+    <div id="top-heading">
+        <h1 id="heading-api">Weather</h1>
+        <h1 id="api">Api</h1>
+    </div>
     <div id="container-box" class="h-75 w-50">  
-        <div id="search-box" class="w-100 h-25 d-flex align-items-center justify-content-between p-2 rounded">
-            <input onchange="getWeather()" id="location-data" type="text" placeholder="Enter City ..." size="45" spellcheck="false">
-            <i onclick="getWeather()" class="fa-solid fa-magnifying-glass"></i>
+        <div id="search-box" class="w-100 position-relative h-25 d-flex align-items-center justify-content-between p-2 rounded">
+            <input onchange="getWeather()" id="location-data" type="text" placeholder="Enter City ..." size="45" spellcheck="false" autocomplete="off">
+            <button onclick="getWeather()" class="search-button">
+                <img src="https://i.postimg.cc/CxdLxWRr/search.png" alt="Search">
+            </button>
         </div>
         <div id="content-box" class="w-100 h-75 rounded d-flex flex-column align-items-center p-3">
             <div id="temp-box" class="w-100 h-50 d-flex justify-content-center align-items-center">
@@ -31,19 +35,25 @@
             </div>
             <div class="w-100 h-50 d-flex justify-content-between align-items-center">
                 <div class="w-25 h-50 d-flex justify-content-center align-items-center">
+                    <img onclick="leftSlide()" class="arrows" src="https://i.postimg.cc/FKgq5KhM/left-arrow.png">
+                </div>
+                <div id="wind-card" class="w-25 h-50 d-flex child1 justify-content-center align-items-center wind-box">
+                    <img src="https://i.postimg.cc/pTy2drnF/wind.png">
+                    <img src="https://i.postimg.cc/qMDxtZY6/line.png">
+                    <h5>Wind Speed<br><span id="wind-speed"></span></h5>
+                </div>
+                <div id="humidity-card" class="d-none w-25 h-50 d-flex justify-content-center align-items-center">
                     <img src="https://i.postimg.cc/W12c3zB1/humidity.png">
                     <img src="https://i.postimg.cc/qMDxtZY6/line.png">
                     <h5>Humidity<br><span id="humidity"></span></h5>
                 </div>
-                <div class="w-25 h-50 d-flex child1 justify-content-center align-items-center wind-box">
-                    <img class="wind-box" src="https://i.postimg.cc/pTy2drnF/wind.png">
-                    <img class="wind-box" src="https://i.postimg.cc/qMDxtZY6/line.png">
-                    <h5 class="wind-box">Wind Speed<br><span id="wind-speed"></span></h5>
-                </div>
-                <div class="w-25 h-50 d-flex justify-content-center align-items-center">
+                <div id="cloud-card" class="d-none w-25 h-50 d-flex justify-content-center align-items-center">
                     <img src="https://i.postimg.cc/CxW5XjZQ/cloud-service.png">
                     <img src="https://i.postimg.cc/qMDxtZY6/line.png">
                     <h5>Cloud<br>Pct<br><span id="cloud-pct"></span></h5>
+                </div>
+                <div class="w-25 h-50 d-flex justify-content-center align-items-center">
+                    <img onclick="rightSlide()" class="arrows" src="https://i.postimg.cc/7PmkJK8F/right-arrow.png">
                 </div>
             </div>
         </div>
