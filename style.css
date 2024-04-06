@@ -1,9 +1,9 @@
 html,body {
-    overflow-x: hidden; 
+    overflow-x: hidden !important; 
 }
 body {  
     background-size: 100% 100% !important;
-    animation: background-change 20s infinite alternate;
+    animation: background-change 20s infinite alternate !important;
 }
 @keyframes background-change {
     0% {background-image: url(https://i.postimg.cc/d1rSXhY0/city1.jpg);}
@@ -13,63 +13,63 @@ body {
     100% {background-image: url(https://i.postimg.cc/d1rSXhY0/city1.jpg);}
 }
 input {
-    background-color: transparent;
-    border: transparent;
+    background-color: transparent !important;
+    border: transparent !important;
     font-size: 1.9rem !important;
-    caret-color: orangered;
-    color: white;
+    caret-color: orangered !important;
+    color: white !important;
 }
 input:focus {
-    outline: transparent;
+    outline: transparent !important;
 }
 input::placeholder,h4,h5 {
     color: white !important;
 }
 .arrows {
-    cursor: pointer;
+    cursor: pointer !important;
 }
 .search-button {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    position: absolute;
-    right: 10px;  
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    cursor: pointer !important;
+    position: absolute !important;
+    right: 10px !important;  
 }
 .search-button img {
-    width: 32px;
-    height: 32px;
+    width: 32px !important;
+    height: 32px !important;
 }
 #search-box {
-    margin-bottom: 1.4vh;
-    background-color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 1.4vh !important;
+    background-color: rgba(0, 0, 0, 0.4) !important;
 }
 #container-box {
-    background-color: transparent;
+    background-color: transparent !important;
 }
 #content-box {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.4) !important;
 }
 h4,h5 {
     margin: 0 !important;
 }
 #top-heading {
-    display: flex;
-    position: absolute;
-    top: 1.4vh;
-    left: 0.7vw;
-    margin: 0;
-    color: white;
+    display: flex !important;
+    position: absolute !important;
+    top: 1.4vh !important;
+    left: 0.7vw !important;
+    margin: 0 !important;
+    color: white !important;
 }
 #top-heading #heading-api {
-    font-family: 'Russo One', sans-serif;
+    font-family: 'Russo One', sans-serif !important;
 }
 #top-heading #api {
-    font-family: 'Sedgwick Ave Display', cursive;
-    margin-top: 1.9vh;
+    font-family: 'Sedgwick Ave Display', cursive !important;
+    margin-top: 1.9vh !important;
 }
 #temp-box {
-    transform: translateX(9.0px);
+    transform: translateX(9.0px) !important;
 }
 @media all and (max-width: 600px) {
     #container-box {
